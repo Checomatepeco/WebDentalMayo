@@ -38,13 +38,17 @@
 body {
   font-family: 'Inter', system-ui, sans-serif;
   color: var(--text-main);
-  background-color: var(--bg-light);
-  /* Fondo azulado suave */
   line-height: 1.85;
   /* Más aire entre líneas */
   letter-spacing: 0.02em;
   /* Más aire entre letras */
   overflow-x: hidden;
+}
+
+/* Fix for iOS forcing blue color on phone numbers */
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
 }
 
 h1,
