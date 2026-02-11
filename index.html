@@ -63,7 +63,15 @@
           <li><a href="#ubicaciones">Ubicaciones</a></li>
           <li><a href="#contacto" class="btn btn-primary" style="padding: 0.6rem 1.8rem; color:white;">Agendar</a></li>
         </ul>
-        <!-- Mobile Toggle Removed as per request -->
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle" style="display: none; background: none; border: none; cursor: pointer;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="#003366" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </nav>
     </div>
   </header>
@@ -150,7 +158,7 @@
 
         <!-- Ayudante 2 -->
         <div class="team-card">
-          <img src="/ayudante2.jpeg" alt="Ayudante Dental" class="team-img">
+          <img src="/ayudante2.jpeg" alt="Ayudante Dental" class="team-img team-img-top">
           <div style="padding: 1.5rem; text-align: center;">
             <p style="font-weight: bold; font-size: 1.1rem; color: var(--primary); margin-bottom: 0.2rem;">Ayudante
               Dental</p>
@@ -259,6 +267,12 @@
       </div>
     </div>
   </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
 
   <script type="module" src="/src/main.js"></script>
 </body>
